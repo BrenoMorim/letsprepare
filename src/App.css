@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header {
+  padding: 2rem;
+  font-size: 5rem;
+  background-color: black;
+  color: lightpink;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Agbalumo', sans-serif;
+}
+
+.app__input {
+  max-width: 24rem;
+  background-color: lightpink;
+  border: purple solid 2px;
+  transition: all 500ms;
+  font-size: 2.5rem;
+  color: black; 
+  padding: .25rem;
+}
+
+.app__main {
+  padding: 4rem;
+}
+
+.app__input:focus {
+  background-color: purple;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__form {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__form input {
+  max-width: 30rem;
+  font-size: 1.5rem;
+}
+
+.app__form span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.app__btn {
+  font-size: 1.5rem;
+  background-color: purple;
+  border-color: purple;
+  color: white;
+  transition: all 500ms;
+}
+
+.app__btn:hover {
+  background-color: pink;
+  border-color: pink;
+  color: black;
+}
+
+.app__btn--reverse {
+  background-color: pink;
+  border-color: pink;
+  color: black;
+}
+
+.app__btn--reverse:hover {
+  background-color: purple;
+  border-color: purple;
+  color: white;
+}
+
+.app__items {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  max-width: 64rem;
+}
+
+.app__item {
+  display: inline;
+  background-color: black;
+  color: pink;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 20rem;
+  transition: all 500ms;
+}
+
+.app__item:hover {
+  color: black;
+  background-color: pink;
+}
+
+.app__grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.right {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__total {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.app__img {
+  border-radius: 1rem;
+  max-width: 40vw;
+  max-height: 50vh;
 }
