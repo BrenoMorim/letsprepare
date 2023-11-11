@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/letsprepare/static/css/main.e35dd039.css",
+    "main.css": "/letsprepare/static/css/main.35a974a7.css",
     "main.js": "/letsprepare/static/js/main.a9b144e5.js",
     "index.html": "/letsprepare/index.html",
-    "main.e35dd039.css.map": "/letsprepare/static/css/main.e35dd039.css.map",
+    "main.35a974a7.css.map": "/letsprepare/static/css/main.35a974a7.css.map",
     "main.a9b144e5.js.map": "/letsprepare/static/js/main.a9b144e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e35dd039.css",
+    "static/css/main.35a974a7.css",
     "static/js/main.a9b144e5.js"
   ]
 }
