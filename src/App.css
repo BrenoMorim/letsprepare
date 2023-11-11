@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@400;600;700&display=swap');
 
 .app__header {
   padding: 2rem;
@@ -24,7 +25,8 @@
 }
 
 .app__main {
-  padding: 3rem 8vw;
+  padding: 3rem 8vw 5vh 8vw;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app__input:focus {
@@ -150,7 +152,7 @@
     font-size: 1.25rem;
   }
   .app__main {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 4rem 1rem;
   }
   .app__form input {
     font-size: 1.25rem;
@@ -162,8 +164,9 @@
   .app__items {
     margin-top: .5rem;
     width: 100%;
-    max-width: max-content;
+    min-width: 100%;
     gap: .5rem;
+    max-width: unset;
     justify-content: space-around;
   }
   .app__item {
