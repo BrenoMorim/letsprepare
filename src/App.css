@@ -2,7 +2,7 @@
 
 .app__header {
   padding: 2rem;
-  font-size: 5rem;
+  font-size: 5.5rem;
   background-color: black;
   color: lightpink;
   display: flex;
@@ -19,7 +19,7 @@
   transition: all 500ms;
   font-size: 2.5rem;
   color: black; 
-  padding: .25rem;
+  padding: .25rem 1rem;
 }
 
 .app__main {
@@ -40,6 +40,8 @@
 .app__form input {
   max-width: 30rem;
   font-size: 1.5rem;
+  border-color: purple;
+  border-width: 2px;
 }
 
 .app__form span {
@@ -122,5 +124,5 @@
 .app__img {
   border-radius: 1rem;
   max-width: 40vw;
-  max-height: 50vh;
+  max-height: 45vh;
 }
