@@ -8,12 +8,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
   font-family: 'Agbalumo', sans-serif;
 }
 
 .app__input {
-  max-width: 24vw;
+  max-width: 500px;
   background-color: lightpink;
   border: purple solid 2px;
   transition: all 500ms;
@@ -23,7 +24,7 @@
 }
 
 .app__main {
-  padding: 4rem;
+  padding: 3rem 8vw;
 }
 
 .app__input:focus {
@@ -39,7 +40,8 @@
 }
 
 .app__form input {
-  max-width: 30vw;
+  min-width: 300px;
+  max-width: 32vw;
   font-size: 1.5rem;
   border-color: purple;
   border-width: 2px;
@@ -128,4 +130,59 @@
   border-radius: 1rem;
   max-width: 40vw;
   max-height: 45vh;
+}
+
+
+@media screen and (max-width: 768px) {
+  .app__header * {
+    font-size: 2rem;
+  }
+  .app__input {
+    font-size: 1.5rem;
+  }
+  .app__form {
+    gap: 1rem;
+  }
+  .app__btn {
+    font-size: 1.25rem;
+  }
+  .app__main {
+    padding: 1rem 2rem;
+  }
+  .app__form input {
+    font-size: 1.25rem;
+    min-width: 80vw;
+  }
+  .app__form span {
+    font-size: 1.5rem;
+  }
+  .app__items {
+    margin-top: .5rem;
+    width: 100%;
+    max-width: max-content;
+    gap: .5rem;
+    justify-content: space-around;
+  }
+  .app__item {
+    font-size: 1.25rem;
+    padding: .25rem .5rem;
+    min-width: 40%;
+    width: fit-content;
+  }
+  .app__grid {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: .5rem;
+  }
+  .right {
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+  }
+  .app__total {
+    font-size: 1.5rem;
+    margin: 0;
+  }
 }
