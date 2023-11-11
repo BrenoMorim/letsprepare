@@ -88,7 +88,7 @@
 }
 
 .app__item {
-  display: inline;
+  display: flex;
   background-color: black;
   color: pink;
   font-size: 2rem;
@@ -100,6 +100,9 @@
   min-width: 160px;
   max-width: 500px;
   transition: all 500ms;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .app__item:hover {
